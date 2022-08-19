@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Chat</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="login_to_continue">Login to continue</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="add_image">Add Image</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="select_user">Select User</string>
+    <string name="type_a_message">Type a message</string>
+    <string name="Unable_to_update_token">Unable to update token</string>
+    <string name="Signing_out">Signing out...</string>
+    <string name="Unable_to_sign_out">Unable to sign out</string>
+    <string name="SimpleDatePattern">dd MMMM, yyyy - hh:mm a</string>
+    <string name="Unable_to_sign_in">Unable to sign in</string>
+    <string name="Enter_email">Enter email</string>
+    <string name="Enter_password">Enter valid email</string>
+    <string name="Email_isnt_correct">Email isn\'t correct</string>
+    <string name="Select_profile_image">Select profile image</string>
+    <string name="Enter_name">Enter your name</string>
+    <string name="Enter_valid_email">Enter valid email</string>
+    <string name="Confirm_your_password">Confirm your password</string>
+    <string name="Confirm_password_and_password">Confirm password and password must be same</string>
+    <string name="Enter_valid_password">Enter valid password</string>
+    <string name="No_avaliable_users">There are no available users</string>
+    <string name="Simple_date_for_recent">dd MMM yyyy</string>
+    <string name="online">online</string>
+</resources>
