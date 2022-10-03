@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    android:background="@color/white"
+    android:padding="@dimen/_12sdp"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/layoutBack"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@drawable/background_search_input"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_arrow_back"
+                android:tint="@color/white"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textDiscipline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/primary_text"
+            android:text="Дисциплина"
+            app:layout_constraintTop_toBottomOf="@id/layoutBack"/>
+
+        <TextView
+            android:id="@+id/discipline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/secondary_text"
+            app:layout_constraintTop_toBottomOf="@id/textDiscipline"/>
+
+        <TextView
+            android:id="@+id/textCab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/primary_text"
+            android:text="Корпус и кабинет"
+            app:layout_constraintTop_toBottomOf="@id/discipline"/>
+
+        <TextView
+            android:id="@+id/cabText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/secondary_text"
+            app:layout_constraintTop_toBottomOf="@id/textCab"/>
+
+        <TextView
+            android:id="@+id/textGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/group_user"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:layout_constraintTop_toBottomOf="@id/cabText" />
+
+
+        <TextView
+            android:id="@+id/groupText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/secondary_text"
+            app:layout_constraintTop_toBottomOf="@id/textGroup"/>
+
+
+
+        <TextView
+            android:id="@+id/textTeacher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Преподаватель"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:layout_constraintTop_toBottomOf="@id/groupText" />
+
+        <TextView
+            android:id="@+id/teacherText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/secondary_text"
+            app:layout_constraintTop_toBottomOf="@id/textTeacher"/>
+
+        <TextView
+            android:id="@+id/studentText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:textColor="@color/primary_text"
+            android:text="Студент"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintTop_toBottomOf="@id/teacherText"/>
+
+        <TextView
+            android:id="@+id/studentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/secondary_text"
+            app:layout_constraintTop_toBottomOf="@id/studentText"/>
+
+
+        <TextView
+            android:id="@+id/checkStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/secondary_text"
+            app:layout_constraintTop_toBottomOf="@id/studentName"/>
+
+        <TextView
+            android:id="@+id/textTimeDebt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:textColor="@color/primary_text"
+            android:text="Время проведения пересдачи"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintTop_toBottomOf="@id/checkStatus"/>
+
+        <TextView
+            android:id="@+id/timeDebt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/secondary_text"
+            app:layout_constraintTop_toBottomOf="@id/textTimeDebt"/>
+        <TextView
+            android:id="@+id/textTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:textColor="@color/primary_text"
+            android:text="Время создания пересдачи"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintTop_toBottomOf="@id/timeDebt"/>
+
+        <TextView
+            android:id="@+id/timeCreation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/secondary_text"
+            app:layout_constraintTop_toBottomOf="@id/textTime"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonDelete"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="Удалить"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:textSize="@dimen/_8ssp"
+            app:cornerRadius="@dimen/_8sdp"
+            app:layout_constraintTop_toBottomOf="@id/timeCreation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+
+
+
+
+</ScrollView>

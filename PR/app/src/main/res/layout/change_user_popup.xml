@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipToPadding="false"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    android:background="@color/white"
+    android:padding="@dimen/_12sdp"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <LinearLayout
+        android:id="@+id/widgetLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/layoutBack"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/background_search_input"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/ic_arrow_back"
+            android:tint="@color/white"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/primary_text"
+        android:text="@string/FIO_user"
+        app:layout_constraintTop_toBottomOf="@id/layoutBack"/>
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/secondary_text"
+        app:layout_constraintTop_toBottomOf="@id/nameText"/>
+
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/primary_text"
+        android:text="@string/email_user"
+        app:layout_constraintTop_toBottomOf="@id/userName"/>
+
+    <TextView
+        android:id="@+id/userEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/secondary_text"
+        app:layout_constraintTop_toBottomOf="@id/emailText"/>
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/primary_text"
+        android:text="@string/date_of_creation"
+        app:layout_constraintTop_toBottomOf="@id/userEmail"/>
+
+    <TextView
+        android:id="@+id/userDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/secondary_text"
+        app:layout_constraintTop_toBottomOf="@id/dateText"/>
+
+    <TextView
+        android:id="@+id/groupText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/primary_text"
+        android:text="@string/group_user"
+        app:layout_constraintTop_toBottomOf="@id/userDate"/>
+
+    <Spinner
+        android:id="@+id/spinnerGroups"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        app:layout_constraintTop_toBottomOf="@id/groupText"/>
+
+    <TextView
+        android:id="@+id/roleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:textColor="@color/primary_text"
+        android:text="@string/role_user"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintTop_toBottomOf="@id/spinnerGroups"/>
+
+    <Spinner
+        android:id="@+id/spinnerRoles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        app:layout_constraintTop_toBottomOf="@id/roleText"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:text="Подтвердить"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_8ssp"
+        app:cornerRadius="@dimen/_8sdp"
+        app:layout_constraintTop_toBottomOf="@id/spinnerRoles"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    </LinearLayout>
+
+
+
+</ScrollView>
